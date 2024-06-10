@@ -9,17 +9,17 @@ interface MenuProps {
 const SidebarLinks = () => {
   return (
     <>
-      <NavLink to='/products'>All Products</NavLink>
-      <NavLink to='/about'>About us</NavLink>
+      <NavLink href='/products'>All Products</NavLink>
+      <NavLink href='/about'>About us</NavLink>
     </>
   );
 };
 const NavMenu: React.FC<MenuProps> = ({ isSidebarOpen }) => {
   return (
     <Menu>
-      return (
+      (
       <li>
-        <NavLink>home</NavLink>
+        <NavLink href='/'>home</NavLink>
       </li>
       ){isSidebarOpen ? <SidebarLinks /> : null}
     </Menu>

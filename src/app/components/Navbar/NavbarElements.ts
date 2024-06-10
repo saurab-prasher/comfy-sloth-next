@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
 
 interface NavProps {
-  className?: string;
+  className?: any;
 }
 export const Nav = styled.nav<NavProps>`
   transition: all 0.1s;

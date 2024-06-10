@@ -1,9 +1,10 @@
-import React from "react"
-import NavMenu from "./Menu"
-import { Nav } from "./NavbarElements"
+"use client";
+import React from "react";
+import NavMenu from "./Menu";
+import { Nav } from "./NavbarElements";
 
 interface NavbarProps {
-  isSidebarOpen?: boolean
+  isSidebarOpen?: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isSidebarOpen }) => {
@@ -11,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ isSidebarOpen }) => {
     <Nav className={isSidebarOpen ? "active-sidebar" : ""}>
       <NavMenu isSidebarOpen={isSidebarOpen} />
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
